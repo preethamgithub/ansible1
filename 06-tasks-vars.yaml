@@ -13,4 +13,4 @@
 
   - name: print the variable1
     ansible.builtin.debug:
-      msg: "Course is {{course}} , duration is {{DURATION}}"
+      msg: "Course is {{COURSE}} , duration is {{DURATION}}"
