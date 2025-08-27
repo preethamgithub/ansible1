@@ -1,0 +1,10 @@
+- name: print the variables from another variable file
+  hosts: local
+  connections: local
+  vars_files:
+  - course.yaml
+
+  taska:
+  - name: print course information
+    ansible.builtin.debug:
+      msg: "Course is {{COURSE}}, duration is {{DURATION}}, trainer is {{TRAINER}}"
