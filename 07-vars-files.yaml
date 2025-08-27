@@ -2,7 +2,13 @@
   hosts: local
   connection: local
   vars_files:
-  - course.yaml
+  - name: COURSE
+    prompt: please enter your course name
+    private: false
+  - name: DURATION
+    prompt: please enter your course duration
+    private: false
+
 
   tasks:
   - name: print course information
